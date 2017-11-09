@@ -1,0 +1,77 @@
+<!doctype>
+<html>
+    <head>
+	    <title> Cloth Shop </title>
+		    <style>
+			    img {width:500px height:500px
+				}
+				input {width:25px
+				}
+			
+			</style>
+			<script>
+			function Purchases(){
+			var Qty1 = document.getElementById("Qty1");
+			var Qty2 = document.getElementById("Qty2");
+			var Qty3 = document.getElementById("Qty3");
+			var Rprice1 = document.getElementById("Rprice1");
+			var Rprice2 = document.getElementById("Rprice2");
+			var Rprice3 = document.getElementById("Rprice3");
+			var Shipping = document.getElementById("Shipping");
+			var Customer = parsefloat(Rprice1.value)*parsefloat(Qty1.value) + parsefloat(Rprice2.value)*parsefloat(Qty2.value) + parsefloat(Rprice3.value)*parsefloat(Qty3.value);
+			var Cost = parsefloat(Wprice1.value)*parsefloat(Qty1.value) + parsefloat(Wprice2.value)*parsefloat(Qty2.value) + parsefloat(Wprice3.value)*parsefloat(Qty3.value);
+			var tax = Customer*(0.875);
+			var item = parsefloat(Qty1.value) + parsefloat(Qty2.value) + parsefloat(Qty3.value);
+			var total Costomer * tax + shipping;
+			var profit = total - Cost;
+			if (Customer <= 100){
+			    Shipping = 25;
+			}
+			else 
+			
+			
+			</script>
+			
+	</head>
+	<body>
+	
+	<div>
+	    <h1> T-shirt </h1>
+		<img src = "shirt.jpg"><br>
+		<span>$39.99</span>
+		<p> Awesome T-shirt...only three hurry...</p>
+		Quantity: <input type = "text" id = "quantity">
+	</div>
+	
+	<br>
+	<br>
+	<br>
+	
+	<div>	
+		<h1> pant </h1>
+		<img src = "pant.jpg"><br>
+		<span>$59.99</span>
+		<p> Awesome pant...only three hurry...</p>
+		Quantity: <input type = "text" id = "quantity">
+	</div>
+	
+	<br>
+	<br>
+	<br>
+	
+	<div>	
+		<h1> shoe </h1>
+		<img src = "shoe.jpg"><br>
+		<span>$79.99</span>
+		<p> Awesome shoe...only three hurry...</p>
+		
+		Quantity: <input type = "text" id = "quantity">
+		
+		<button onclick = "Money()">Profit 
+		
+	</body>
+<html>
+		
+	
+	
+	
